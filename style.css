@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: white;
+    box-shadow: rgba(54, 54, 160, 0.1) 0px 0px 16px;;
+}
+
+#main-menu button {
+    padding-block: 1rem;
+    width: 200px;
+    border: 0;
+    outline: 0;
+    background-color: #0f4da1;
+    color: #111010;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#main-menu button:hover  {
+    opacity: .8;
+    color: red;
+}
+

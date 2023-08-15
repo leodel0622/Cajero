@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Proyecto Cajero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <div class="main">
+    <header class="">
+
+    </header>
+    <main class="w-100">
+      <form class="w-75 m-auto flex-column justify-content-center align-items-center py-5" id="login">
+        <input class="form-control w-100 mb-3" type="text" name="document" placeholder="Ingresa tu numero documento para continuar...">
+        <button class="btn btn-outline-dark d-block m-auto w-50">Ingresar</button>
+      </form>
+
+        <div id="main-menu" class="row w-100 m-auto align-items-center gap-4 justify-content-center d-none">
+          <h1 class="text-center py-5 title">Elija una opción</h1>
+          <button id="insert" data-bs-toggle="modal" data-bs-target="#exampleModal">Depositar</button>
+          <button id="withdraw" data-bs-toggle="modal" data-bs-target="#exampleModal">Retirar</button>
+          <button id="details" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver saldo</button>
+        </div>
+    </main>
+  </div>
+  
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <form id="form-transaction">
+        <div class="modal-body"></div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Realizar transacción</button>
+        </div>
+      </form>
+
+      <div id="receipt" class="modal-body d-none">
+        <p class="message-receipt"></p>
+        <p class="date"></p>
+        <p class="amount"></p>
+        <p class="new-balance"></p>
+        <div>
+          <button id="exit" type="button" class="btn btn-outline-dark btn-sm">Salir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
